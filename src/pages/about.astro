@@ -1,0 +1,35 @@
+---
+import Main from "../components/Main.astro";
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+
+
+---
+
+<Layout title="About">
+ 
+    <Main>
+      <Fragment slot="title">About</Fragment>
+      <Fragment slot="desc">Helmar Bachle</Fragment>
+    </Main>
+
+   
+    
+
+ 
+
+    <div class="mx-auto max-w-xl text-justify py-3.5">
+      <p class="text-lg leading-relaxed text-gray-600n justify-around px-px mx-3">
+        At Wellness Homes, we invite you to embark on a transformative journey towards a healthier, more balanced life. Whether you're seeking a refuge from the demands of modern life or looking to embrace a wellness-focused lifestyle, our homes provide the foundation for your personal growth and vitality.
+      </p>
+      <div class="mt-8">
+       
+        <Fragment slot="desc">watch the video</Fragment>
+        <div style="display: flex; justify-content: center;">  
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/A_huALAAWdo?si=u5sCorPqge0DeAfQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          
+         
+
+  </Container>
+</Layout>

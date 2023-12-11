@@ -1,0 +1,42 @@
+---
+import Main from "../components/Main.astro";
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import { Image } from "astro:assets";
+
+
+---
+
+<Layout title="About">
+ 
+    <Main>
+        <div class="flex items-center justify-center space-x-8">
+            <!-- Avatar 1 -->
+            <div class="flex flex-col items-center">
+              <div class="bg-gray-300 rounded-full p-2">
+                <img class="h-36 w-36 rounded-full" src="/images/sally.jpg" alt="Avatar 1">
+              </div>
+              <p class="mt-2 text-center text-sm">Sally Doe</p>
+            </div>
+          
+            <!-- Avatar 2 -->
+            <div class="flex flex-col items-center">
+              <div class="bg-gray-300 rounded-full p-2">
+                <img class="h-36 w-36 rounded-full" src="/images/MsAnh.jpg" alt="Avatar 2">
+              </div>
+              <p class="mt-2 text-center text-sm">The Boss</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <div class="bg-gray-300 rounded-full p-2">
+              <img class="h-36 w-36 rounded-full" src="/images/Anh.jpg" alt="Avatar 2">
+            </div>
+            <p class="mt-2 text-center text-sm">Anh Bao</p>
+          </div>
+        </div>
+
+        
+              
+    </Main>
+

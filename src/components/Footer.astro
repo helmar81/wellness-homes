@@ -1,0 +1,44 @@
+---
+import Social from './Social.astro'
+---
+
+<footer class="py-9 lg:py-12 text-center bg-slate-300">
+
+  <div class="footer-nav">
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="/team">Team</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <Social />
+  <div class="text-sm y-5" data-test="footer-text">&copy;<script type="text/javascript"> document.write(new Date().getFullYear()); </script> Uspekhi</div>
+ 
+</footer>
+
+
+<style>
+
+.footer-nav {
+  text-align: center;
+}
+
+.footer-nav nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.footer-nav nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+</style>
+
+
+
