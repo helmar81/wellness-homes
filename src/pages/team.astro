@@ -4,17 +4,22 @@ import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import { Image } from "astro:assets";
 
+import H1 from "../components/H1.astro";
+
 
 ---
 
-<Layout title="About">
+<Layout title="Team">
  
     <Main>
-        <div class="flex items-center justify-center space-x-8">
+
+      <H1 text="Meet The Team"/>
+        <div class="flex items-center justify-center space-x-7">
             <!-- Avatar 1 -->
+    
             <div class="flex flex-col items-center">
               <div class="bg-gray-300 rounded-full p-2">
-                <img class="h-36 w-36 rounded-full" src="/images/sally.jpg" alt="Avatar 1">
+                <img class="h-36 w-39 rounded-full" src="/images/sally2.jpg" alt="Avatar 1">
               </div>
               <p class="mt-2 text-center text-sm">Sally Doe</p>
             </div>
@@ -22,19 +27,32 @@ import { Image } from "astro:assets";
             <!-- Avatar 2 -->
             <div class="flex flex-col items-center">
               <div class="bg-gray-300 rounded-full p-2">
-                <img class="h-36 w-36 rounded-full" src="/images/MsAnh.jpg" alt="Avatar 2">
+                <img class="h-36 w-39 rounded-full" src="/images/MsAnh.jpg" alt="Avatar 2">
               </div>
               <p class="mt-2 text-center text-sm">The Boss</p>
             </div>
-          </div>
 
-          <div class="flex flex-col items-center">
-            <div class="bg-gray-300 rounded-full p-2">
-              <img class="h-36 w-36 rounded-full" src="/images/Anh.jpg" alt="Avatar 2">
-            </div>
-            <p class="mt-2 text-center text-sm">Anh Bao</p>
-          </div>
+           
+
+        
+
+      <div class="flex flex-col items-center">
+        <div class="bg-gray-300 rounded-full p-2">
+          <img class="h-36 w-39 rounded-full" src="/images/anhB.jpg" alt="Avatar 2">
         </div>
+        <p class="mt-2 text-center text-sm">Anh Bao</p>
+      </div>
+    </div>
+
+    <div class="flex flex-col items-center">
+      <div class="bg-gray-300 rounded-full p-2">
+        <img class="h-36 w-39 rounded-full" src="/images/relax.webp" alt="Avatar 2">
+      </div>
+      <p class="mt-2 text-center text-sm">Hoang Minh</p>
+    </div>
+  </div>
+
+
 
         
               
