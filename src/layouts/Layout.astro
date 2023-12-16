@@ -6,6 +6,8 @@ import Footer from "../components/Footer.astro"
 
 import { ViewTransitions } from 'astro:transitions';
 
+import { SEO } from "astro-seo";
+
 
 interface Props {
 	title: string;
@@ -31,15 +33,37 @@ const { title, description, image }
 		<meta name="generator" content={Astro.generator} />
 		<meta property="og:image" content={image} />
 		<title>{title}</title>
+
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-N56RJ68XHQ"></script>
+
 		<ViewTransitions />
 
-	
+		<SEO
+      title="Wellness Homes Vung Tau, Vietnam"
+      description="Wellness Homes Vung Tau offers specific health and wellness services and is proud to be one of the most prestigious wellness providers in Vietnam, led by physicians. Situated near the beautiful Long Cung resort beach in Vung Tau, we aim to extend our services to foreigners residing in Vung Tau and other locations across Vietnam. "
+      openGraph={{
+        basic: {
+          title: "A Very Popular Place",
+          type: "Wellness.",
+          image: "https://unsplash.com/photos/C4f5KVFdjJo",
+        }
+      }}
+      
+    />
 
 	
+  
+  </head>
+  
 	</head>
 	<Header />
 	
 	<body>
+
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WP4KPCP5"
+			height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+			<!-- End Google Tag Manager (noscript) -->
 		<slot />
 		<Footer />
 		<body class="min-h-screen">
