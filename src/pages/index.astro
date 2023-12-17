@@ -7,18 +7,17 @@ import Main from "../components/Main.astro";
 
 import { Image } from 'astro:assets';
 
+import homes from "../images/homes.jpg"
+
 ---
 
 <Layout title="Wellness Homes">
 	<Main>
 		<H1 text="Vung Tau"/>
 
-<img src="/images/oasis.webp" alt="wellness=" class="rounded-2xl shadow-xl mb-4  object-cover">
+		<Image src={homes} alt="sunset" class="rounded-2xl shadow-xl mb-4  object-cover inline" width="1024" height="800" />
 
 
-
-
-  
   <div class="mx-auto max-w-xl text-justify py-3.5">
 	<p class="text-lg leading-relaxed text-gray-600n justify-around">
 		Wellness Homes Vung Tau offers specific health and wellness services and is proud to be one of the most prestigious wellness providers in Vietnam, led by physicians. Situated near the beautiful Long Cung resort beach in Vung Tau, we aim to extend our services to foreigners residing in Vung Tau and other locations across Vietnam. 
