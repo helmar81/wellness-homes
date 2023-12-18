@@ -4,12 +4,14 @@ import Layout from "../layouts/Layout.astro";
 import Container from "../components/container.astro";
 import Contactform from "../components/contactform.astro";
 import { Icon } from "astro-icon";
+import Main from "../components/Main.astro";
 
 ---
 
 <Layout title="Contact">
     <Container>
       
+      <Main>
         
       <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16">
         <div>
@@ -40,6 +42,8 @@ import { Icon } from "astro-icon";
           <Contactform />
         </div>
       </div>
+
+    </Main>
     </Container>
   </Layout>
   
