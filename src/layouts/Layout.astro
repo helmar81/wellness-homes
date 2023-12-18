@@ -27,7 +27,12 @@ const { title, description, image }
 	<head>
 		
 		<meta charset="UTF-8" />
-		<meta name="description" content={description} />
+		<meta
+name="description"
+content="Wellness Homes Vung Tau offers specific health and wellness 
+services and is proud to be one of the most prestigious wellness providers in Vietnam,
+led by physicians. Situated near the beautiful Long Cung resort beach in Vung Tau, 
+we aim to extend our services to foreigners residing in Vung Tau and other locations across Vietnam.">
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
@@ -60,10 +65,7 @@ const { title, description, image }
 	
 	<body>
 
-		<!-- Google Tag Manager (noscript) -->
-		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WP4KPCP5"
-			height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-			<!-- End Google Tag Manager (noscript) -->
+		
 		<slot />
 		<Footer />
 		<body class="min-h-screen">
