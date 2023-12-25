@@ -41,7 +41,15 @@ we aim to extend our services to foreigners residing in Vung Tau and other locat
 		<meta property="og:image" content={image} />
 		<title>{title}</title>
 
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-N56RJ68XHQ"></script>
+		<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N56RJ68XHQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-N56RJ68XHQ');
+</script>
 
 		
 
@@ -55,12 +63,6 @@ we aim to extend our services to foreigners residing in Vung Tau and other locat
 	
   <body>
 
-	<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WP4KPCP5"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
-	  <slot />
-	  <Footer />
-	  <body class="min-h-screen">
+
 
 </html>
